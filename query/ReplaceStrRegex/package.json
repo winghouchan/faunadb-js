@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/ReplaceStrRegex",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/ReplaceStrRegex.js",
+  "module": "../../esm5/query/ReplaceStrRegex.js",
+  "es2015": "../../src/query/ReplaceStrRegex.js",
+  "sideEffects": false
+}

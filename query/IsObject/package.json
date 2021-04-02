@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/IsObject",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/IsObject.js",
+  "module": "../../esm5/query/IsObject.js",
+  "es2015": "../../src/query/IsObject.js",
+  "sideEffects": false
+}

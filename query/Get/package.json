@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/Get",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/Get.js",
+  "module": "../../esm5/query/Get.js",
+  "es2015": "../../src/query/Get.js",
+  "sideEffects": false
+}

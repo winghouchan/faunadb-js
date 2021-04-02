@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/Lambda",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/Lambda.js",
+  "module": "../../esm5/query/Lambda.js",
+  "es2015": "../../src/query/Lambda.js",
+  "sideEffects": false
+}

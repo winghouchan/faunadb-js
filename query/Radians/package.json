@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/Radians",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/Radians.js",
+  "module": "../../esm5/query/Radians.js",
+  "es2015": "../../src/query/Radians.js",
+  "sideEffects": false
+}

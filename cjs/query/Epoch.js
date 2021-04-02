@@ -1,0 +1,32 @@
+'use strict'
+
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+})
+exports.default = Epoch
+
+var _Expr = _interopRequireDefault(require('../Expr'))
+
+var _common = require('./common')
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj }
+}
+
+/**
+ * See the [docs](https://app.fauna.com/documentation/reference/queryapi#time-and-date).
+ *
+ * @param {module:query~ExprArg} number
+ *   The number of `unit`s from Epoch
+ * @param {module:query~ExprArg} unit
+ *   The unit of `number`. One of second, millisecond, microsecond, nanosecond.
+ * @return {Expr}
+ */
+function Epoch(number, unit) {
+  _common.arity.exact(2, arguments, Epoch.name)
+
+  return new _Expr.default({
+    epoch: (0, _common.wrap)(number),
+    unit: (0, _common.wrap)(unit),
+  })
+}

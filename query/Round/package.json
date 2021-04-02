@@ -1,0 +1,17 @@
+{
+  "name": "faunadb/query/Round",
+  "version": "4.1.3",
+  "apiVersion": "4",
+  "description": "FaunaDB Javascript driver for Node.JS and Browsers",
+  "browser": {
+    "http2": false,
+    "http": false,
+    "https": false,
+    "os": false,
+    "util": false
+  },
+  "main": "../../cjs/query/Round.js",
+  "module": "../../esm5/query/Round.js",
+  "es2015": "../../src/query/Round.js",
+  "sideEffects": false
+}

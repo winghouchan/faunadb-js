@@ -1,0 +1,28 @@
+'use strict'
+
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+})
+exports.default = Space
+
+var _Expr = _interopRequireDefault(require('../Expr'))
+
+var _common = require('./common')
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj }
+}
+
+/**
+ * See the [docs](https://app.fauna.com/documentation/reference/queryapi#string-functions).
+ *
+ * @param {int} num - The string of N Space(s).
+ * @return {string} a string with spaces
+ */
+function Space(num) {
+  _common.arity.exact(1, arguments, Space.name)
+
+  return new _Expr.default({
+    space: (0, _common.wrap)(num),
+  })
+}
