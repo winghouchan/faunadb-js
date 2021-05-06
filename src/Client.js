@@ -171,7 +171,7 @@ function Client(options) {
     : 500
 
   options = util.applyDefaults(options, {
-    domain: 'db.fauna.com',
+    domain: process.env.FAUNADB_DOMAIN || 'db.fauna.com',
     scheme: 'https',
     port: null,
     secret: null,
