@@ -239,21 +239,21 @@ describe('page', () => {
       })
   })
 
-  test('honors ts', () => {
+  test('honor ts 1', () => {
     var page = new PageHelper(client, query.Match(tsIndexRef))
-    var p1 = page.each(function(item) {
+    page.each(function(item) {
       expect(item.length).toEqual(2)
     })
+  })
 
+  test('honor ts 2', () => {
     var page2 = new PageHelper(client, query.Match(tsIndexRef), {
       ts: tsInstance1Ts,
     })
-    var p2 = page2.each(function(item) {
+    page2.each(function(item) {
       expect(item.length).toEqual(1)
       expect(item[0]).toEqual(tsInstance1Ref)
     })
-
-    return Promise.all([p1, p2])
   })
 
   test('honors events', () => {
