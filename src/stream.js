@@ -19,7 +19,7 @@ var http = require('./_http')
 var q = require('./query')
 var util = require('./_util')
 
-var DefaultEvents = ['start', 'error', 'version', 'history_rewrite']
+var DefaultEvents = ['start', 'error', 'version', 'history_rewrite', 'set']
 var DocumentStreamEvents = DefaultEvents.concat(['snapshot'])
 
 /**
